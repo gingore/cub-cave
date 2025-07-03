@@ -1,0 +1,175 @@
+@charset "UTF-8";
+/* CSS document */
+
+body {
+	background-image: url("gingham.jpg");
+	background-repeat: repeat;
+	padding-top: 1%;
+}
+#wrapper {
+	background-color: #f5f6f1; 
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+    color: #330000;
+	padding: 0.3%;
+    border-radius: 15px;
+    border: 1px solid #000;
+}
+#logo-container {
+	width: 100%;
+	height: auto;
+}
+header {
+	background: #d1c0a8;
+	margin-bottom: 0.5%;
+	border-radius: 10px;
+	background-size: cover;
+	justify-content: center;
+	display: flex;
+	overflow: hidden;
+}
+#demo {
+	display: flex;
+    flex-direction: row;
+}
+aside {
+	padding-right: 2%;
+	padding-top: 0.5%;
+	padding-bottom: 1%;
+	flex: 2;
+}
+nav {
+	background: #8da47e;
+	padding: 1%;
+	border-radius: 10px;
+	flex:1;
+}
+main {
+	padding:0% 1.5% 1% 2%;
+	flex: 7;
+}
+.pastry {
+	height: 8%;
+	width: 8%;
+	border-radius: 12px;
+}
+p {
+	line-height: 2em;
+	font-size: 110%;
+	font-family: candara;
+}
+main h2 {
+	font-size: 2.2em;
+	font-family: arial;
+	color: #cb4c4e;
+	padding: 0.2% 0% 1% 1%;
+	text-transform:uppercase;
+}
+footer {
+	display: flex;
+	justify-content: center;
+	padding:1%;
+	background: #e1d5c9;
+	font-size: 1em;
+    font-style: italic;
+    border-radius: 10px;
+}
+nav ul {
+	text-align: center;
+	list-style-type:none;
+}
+nav li {
+	display: inline;
+	margin: 0 1%;
+	font-size: 1.5em;
+
+}
+nav a:link, nav a:visited {
+	font: bold 1em Arial, Helvetica, sans-serif;
+	color: #ffffff;  
+	text-decoration: none;
+	padding: 0.5% 1%;
+	text-transform:uppercase;
+}
+nav a:hover {
+	color: #e6ccb2;
+}
+.menu {
+  font-family: arial;
+}
+
+.menu-group-heading {
+  margin: 0;
+  padding: 1em 1em 1em 0.5em;
+  font-size: 2.2em;
+  border-bottom: 4px dashed #e1d5c9;
+}
+
+.menu-group {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5em;
+  padding: 1.5em 0;
+}
+
+.menu-item {
+  display: flex;
+}
+.drinks, .pastry {
+  flex-shrink: 0;
+  margin-right: 1.5em;
+  width: 10em;
+  height: 10em;
+  outline: 1px solid #e1d5c9;
+  border-radius: 15px;
+}
+
+.menu-item-price {
+	color: #8b6c5c;
+	padding-top: 1em;
+	padding-right: 1em;
+}
+.menu-item-heading {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.menu-item-name {
+  margin-right: 0.5em;
+  padding-left: 0.5em;
+  padding-top: 1em;
+  padding-bottom: 0.5em;
+  text-transform: uppercase;
+  border-bottom: 4px dashed #e1d5c9;
+  color: #8b6c5c;
+}
+
+.menu-item-description {
+  line-height: 2em;
+  padding-left: 1.2em;
+  color: #4c3228;
+}
+
+  .menu-group {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+@media only screen and (max-width: 1024px) {
+            body { margin: 0; padding: 0; } 
+            #wrapper { width: auto; margin: 0; }
+		    h1 { font-size: 200%; }
+			#demo { flex-direction: column;
+            }
+		    nav ul { display: flex;
+                     flex-direction: row;
+				     justify-content: center; 
+			}
+			nav li { padding: 0 0.5em; 
+				     font-size: 1.2em;
+			}	
+}		
+@media only screen and (max-width: 768px) {
+         	nav ul {flex-direction: column;}   	
+}
